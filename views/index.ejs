@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+</head>
+<body>
+  <h1>Current targets:</h1>
+  <ul>
+  <% targets.forEach(function(target) { %>
+    <li><%= target %></li>
+  <% }); %>
+  </ul>
+</body>
+</html>
