@@ -42,5 +42,5 @@ config.getTargets(function(targets) {
     pingdong.run(http, targets, function(target, res) {
       console.log('[' + moment().format() + '] Ping of "' + target + '" responded with status: ' + res.statusCode);
     });
-  }, 5000);
+  }, (5 * 60 * 1000));
 });
